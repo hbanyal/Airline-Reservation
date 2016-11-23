@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+
+  configserver:
+    build: ../configserver
+    restart: always
+    ports:
+      - "8888:8888"
