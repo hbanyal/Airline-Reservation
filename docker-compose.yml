@@ -2,13 +2,21 @@ version: '2'
 
 services:
 
-  eureka:
+  eureka1:
     image: hbanyal/eureka:v3
     restart: always
     ports:
       - "8761:8761"
     environment:
         SPRING_PROFILES_ACTIVE: server1
+
+  eureka2:
+    image: hbanyal/eureka:v3
+    restart: always
+    ports:
+      - "8762:8762"
+    environment:
+        SPRING_PROFILES_ACTIVE: server2
   
 
   
