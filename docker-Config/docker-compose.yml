@@ -3,7 +3,7 @@ version: '2'
 services:
 
   configserver:
-    build: ../configserver
+    image: hbanyal/config:v2
     restart: always
     ports:
       - "8888:8888"
