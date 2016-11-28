@@ -17,7 +17,6 @@ services:
       - "8762:8762"
     environment:
         SPRING_PROFILES_ACTIVE: server2
-		
   web1:
     image: hbanyal/airweb:v1
     restart: always
