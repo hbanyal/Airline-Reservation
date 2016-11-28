@@ -1,0 +1,9 @@
+com\client\CheckInRecord.class
+com\client\BookingRecord.class
+com\client\Application.class
+com\client\SiteController.class
+com\client\Flight.class
+com\client\Passenger.class
+com\client\SearchQuery.class
+com\client\UIData.class
+com\client\Fares.class
