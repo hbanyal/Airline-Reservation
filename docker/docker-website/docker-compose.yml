@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+
+  configserver:
+    image: hbanyal/airweb:v1
+    restart: always
+    ports:
+      - "8001:8001"
