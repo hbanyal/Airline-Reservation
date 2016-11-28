@@ -41,7 +41,7 @@ public class SiteController {
 //				"http://localhost:8090/search/get", uiData.getSearchQuery(),
 //				Flight[].class);
 		Flight[] flights = restTemplate.postForObject(
-				"http://airline-search/search/get", uiData.getSearchQuery(),
+				"http://10.0.2.15:8090/search/get", uiData.getSearchQuery(),
 				Flight[].class);
 		uiData.setFlights(Arrays.asList(flights));
 		model.addAttribute("uidata", uiData);
