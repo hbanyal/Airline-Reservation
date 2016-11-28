@@ -1,6 +1,6 @@
-D:\MyApplications\Airline Reservation\search\src\main\java\com\search\controller\SearchQuery.java
-D:\MyApplications\Airline Reservation\search\src\main\java\com\search\entity\Flight.java
-D:\MyApplications\Airline Reservation\search\src\main\java\com\search\controller\SearchRestController.java
-D:\MyApplications\Airline Reservation\search\src\main\java\com\search\Application.java
-D:\MyApplications\Airline Reservation\search\src\main\java\com\search\repository\FlightRepository.java
-D:\MyApplications\Airline Reservation\search\src\main\java\com\search\component\SearchComponent.java
+D:\MyApplications\Airline-Reservation\search\src\main\java\com\search\repository\FlightRepository.java
+D:\MyApplications\Airline-Reservation\search\src\main\java\com\search\controller\SearchQuery.java
+D:\MyApplications\Airline-Reservation\search\src\main\java\com\search\Application.java
+D:\MyApplications\Airline-Reservation\search\src\main\java\com\search\entity\Flight.java
+D:\MyApplications\Airline-Reservation\search\src\main\java\com\search\component\SearchComponent.java
+D:\MyApplications\Airline-Reservation\search\src\main\java\com\search\controller\SearchRestController.java

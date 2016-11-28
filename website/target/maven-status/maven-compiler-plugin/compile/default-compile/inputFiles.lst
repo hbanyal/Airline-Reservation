@@ -1,9 +1,9 @@
-D:\MyApplications\Airline Reservation\website\src\main\java\com\client\Application.java
-D:\MyApplications\Airline Reservation\website\src\main\java\com\client\SiteController.java
-D:\MyApplications\Airline Reservation\website\src\main\java\com\client\Passenger.java
-D:\MyApplications\Airline Reservation\website\src\main\java\com\client\BookingRecord.java
-D:\MyApplications\Airline Reservation\website\src\main\java\com\client\UIData.java
-D:\MyApplications\Airline Reservation\website\src\main\java\com\client\CheckInRecord.java
-D:\MyApplications\Airline Reservation\website\src\main\java\com\client\Flight.java
-D:\MyApplications\Airline Reservation\website\src\main\java\com\client\Fares.java
-D:\MyApplications\Airline Reservation\website\src\main\java\com\client\SearchQuery.java
+D:\MyApplications\Airline-Reservation\website\src\main\java\com\client\Fares.java
+D:\MyApplications\Airline-Reservation\website\src\main\java\com\client\SiteController.java
+D:\MyApplications\Airline-Reservation\website\src\main\java\com\client\Passenger.java
+D:\MyApplications\Airline-Reservation\website\src\main\java\com\client\CheckInRecord.java
+D:\MyApplications\Airline-Reservation\website\src\main\java\com\client\UIData.java
+D:\MyApplications\Airline-Reservation\website\src\main\java\com\client\Flight.java
+D:\MyApplications\Airline-Reservation\website\src\main\java\com\client\Application.java
+D:\MyApplications\Airline-Reservation\website\src\main\java\com\client\BookingRecord.java
+D:\MyApplications\Airline-Reservation\website\src\main\java\com\client\SearchQuery.java
