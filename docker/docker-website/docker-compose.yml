@@ -2,7 +2,7 @@ version: '2'
 
 services:
 
-  configserver:
+  website:
     image: hbanyal/airweb:v1
     restart: always
     ports:

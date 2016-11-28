@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+
+  search:
+    image: hbanyal/search:v1
+    restart: always
+    ports:
+      - "8090:8090"

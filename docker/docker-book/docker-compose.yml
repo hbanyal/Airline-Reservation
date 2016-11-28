@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+
+  book:
+    image: hbanyal/book:v1
+    restart: always
+    ports:
+      - "8091:8091"
