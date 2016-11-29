@@ -12,16 +12,22 @@ services:
     restart: always
     ports:
       - "8090:8090"
+    links:
+      - eureka
   book:
     image: hbanyal/book:v1
     restart: always
     ports:
       - "8091:8091"
+    links:
+      - eureka
   web:
     image: hbanyal/airweb:v1
     restart: always
     ports:
       - "8001:8001"
+  links:
+      - eureka
     
   
   
