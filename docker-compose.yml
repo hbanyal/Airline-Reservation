@@ -4,7 +4,7 @@ services:
   rabbitmq:
     image: rabbitmq:latest
     ports:
-      - "5672:5672"	  
+      - "5672:5672"  
   eureka:
     image: hbanyal/eureka:v5
     restart: always
