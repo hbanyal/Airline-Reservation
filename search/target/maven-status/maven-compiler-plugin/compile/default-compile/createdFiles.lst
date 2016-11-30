@@ -4,5 +4,4 @@ com\search\controller\SearchQuery.class
 com\search\controller\SearchRestController.class
 com\search\repository\FlightRepository.class
 com\search\entity\Flight.class
-com\search\component\SearchSink.class
 com\search\component\SearchComponent.class

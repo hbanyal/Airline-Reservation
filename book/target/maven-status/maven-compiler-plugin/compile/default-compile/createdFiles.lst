@@ -1,4 +1,3 @@
-com\book\component\BookingSource.class
 com\book\entity\Inventory.class
 com\book\controller\BookingController.class
 com\book\component\BookingComponent.class
