@@ -1,6 +1,8 @@
 package com.book.component;
 
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Set;
 
 import org.slf4j.Logger;
@@ -21,12 +23,14 @@ public class BookingComponent {
 
 	BookingRepository bookingRepository;
 	InventoryRepository inventoryRepository;
+	Sender sender;
 
 	@Autowired
 	public BookingComponent(BookingRepository bookingRepository,
-			InventoryRepository inventoryRepository) {
+			InventoryRepository inventoryRepository, Sender sender) {
 		this.bookingRepository = bookingRepository;
 		this.inventoryRepository = inventoryRepository;
+		this.sender = sender;
 	}
 
 	public BookingRecord book(BookingRecord record) {
@@ -52,7 +56,15 @@ public class BookingComponent {
 		passengers.forEach(passenger -> passenger.setBookingRecord(record));
 		record.setBookingDate(new Date());
 		BookingRecord bookingRecord = bookingRepository.save(record);
-		logger.info("Successfully saved booking:"+bookingRecord.getId());
+		logger.info("Successfully saved booking:" + bookingRecord.getId());
+		// send a message to search to update inventory
+		logger.info("sending a booking event");
+		Map<String, Object> bookingDetails = new HashMap<String, Object>();
+		bookingDetails.put("FLIGHT_NUMBER", record.getFlightNumber());
+		bookingDetails.put("FLIGHT_DATE", record.getFlightDate());
+		bookingDetails.put("NEW_INVENTORY", inventory.getBookableInventory());
+		sender.send(bookingDetails);
+		logger.info("booking event successfully delivered " + bookingDetails);
 		return bookingRecord;
 	}
 
