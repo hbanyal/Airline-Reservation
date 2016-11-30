@@ -25,7 +25,7 @@ services:
       - "8091:8091"
     links:
       - eureka
-      - rabbitmq	  
+      - rabbitmq 
   web:
     image: hbanyal/airweb:v1
     restart: always
