@@ -4,14 +4,12 @@ services:
   rabbitmq:
     image: rabbitmq:latest
     ports:
-      - "5672:5672"
-	  
+      - "5672:5672"	  
   eureka:
     image: hbanyal/eureka:v5
     restart: always
     ports:
-      - "8761:8761"
-	  
+      - "8761:8761"	  
   search:
     image: hbanyal/search:v1
     restart: always
@@ -19,8 +17,7 @@ services:
       - "8090:8090"
     links:
       - eureka
-      - rabbitmq
-	  
+      - rabbitmq	  
   book:
     image: hbanyal/book:v1
     restart: always
@@ -28,8 +25,7 @@ services:
       - "8091:8091"
     links:
       - eureka
-      - rabbitmq
-	  
+      - rabbitmq	  
   web:
     image: hbanyal/airweb:v1
     restart: always
