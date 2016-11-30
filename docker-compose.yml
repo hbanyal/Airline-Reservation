@@ -5,6 +5,7 @@ services:
     image: rabbitmq:3-management
     ports:
       - "5672:5672"
+      - "15672:15672"
   eureka:
     image: hbanyal/eureka:v5
     restart: always
