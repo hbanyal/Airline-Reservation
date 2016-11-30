@@ -17,7 +17,7 @@ services:
       - "8090:8090"
     links:
       - eureka
-      - rabbitmq	  
+      - rabbitmq
   book:
     image: hbanyal/book:v1
     restart: always
