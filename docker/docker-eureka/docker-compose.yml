@@ -4,6 +4,7 @@ services:
 
   eureka:
     image: hbanyal/eureka:v5
+    container_name: eureka
     restart: always
     ports:
       - "8761:8761"
