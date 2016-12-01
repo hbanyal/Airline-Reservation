@@ -9,4 +9,8 @@ services:
       - "8001:8001"
     external_links:
       - eureka
-      - search
+	  
+networks:
+    default:
+        external:
+           name: eureka
