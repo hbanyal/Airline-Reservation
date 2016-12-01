@@ -4,6 +4,7 @@ services:
 
   search:
     image: hbanyal/search:v1
+    container_name: search
     restart: always
     ports:
       - "8090:8090"
