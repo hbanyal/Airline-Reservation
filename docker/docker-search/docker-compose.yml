@@ -10,7 +10,7 @@ services:
       - "8090:8090"
     external_links:
       - eureka
-	  
+
 networks:
     default:
         external:
