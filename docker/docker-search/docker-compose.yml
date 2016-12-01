@@ -7,3 +7,5 @@ services:
     restart: always
     ports:
       - "8090:8090"
+    external_links:
+      - dockereureka_eureka_1
