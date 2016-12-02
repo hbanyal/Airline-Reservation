@@ -7,3 +7,10 @@ services:
     restart: always
     ports:
       - "8091:8091"
+    external_links:
+      - eureka
+
+networks:
+    default:
+        external:
+           name: dockereureka_eureka
