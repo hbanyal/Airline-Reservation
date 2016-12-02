@@ -9,8 +9,8 @@ services:
       - "15672:15672"
     networks:
       - eureka
-	  
-  
+
+
   eureka:
     image: hbanyal/eureka:v5
     container_name: eureka
