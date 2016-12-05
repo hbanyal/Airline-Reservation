@@ -45,9 +45,6 @@ services:
     links:
       - eureka
 
-networks:
-    mynetwork:
-
     
   
   
