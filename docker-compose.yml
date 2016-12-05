@@ -45,6 +45,10 @@ services:
     links:
       - eureka
 
+networks:
+    mynetwork:
+          driver: overlay
+
     
   
   
