@@ -1,0 +1,69 @@
+{
+  "Services": {
+    "book": {
+      "Image": "hbanyal/book@sha256:e5bdc5a4e405842f3592888545ea1b7c81db52284eb47cc9879653e62357637f", 
+      "Networks": [
+        "mynetwork1"
+      ], 
+      "Ports": [
+        {
+          "Port": 8091, 
+          "Protocol": "tcp"
+        }
+      ]
+    }, 
+    "eureka": {
+      "Image": "hbanyal/eureka@sha256:ac395b4ca0d0820f6a6828c9793da777436628fc56cf8b61b09a33b2d05c0a38", 
+      "Networks": [
+        "mynetwork1"
+      ], 
+      "Ports": [
+        {
+          "Port": 8761, 
+          "Protocol": "tcp"
+        }
+      ]
+    }, 
+    "rabbitmq": {
+      "Image": "rabbitmq@sha256:50068c4b4fc067ba9922aee20308e9375f71045f9fba6173f6c2951b47bd9e1e", 
+      "Networks": [
+        "mynetwork1"
+      ], 
+      "Ports": [
+        {
+          "Port": 5672, 
+          "Protocol": "tcp"
+        }, 
+        {
+          "Port": 15672, 
+          "Protocol": "tcp"
+        }
+      ]
+    }, 
+    "search": {
+      "Image": "hbanyal/search@sha256:dd42ca449a6b6d929ab80918c04a56fb70ea614e3bf08a9beddac3cc6d3ff6f4", 
+      "Networks": [
+        "mynetwork1"
+      ], 
+      "Ports": [
+        {
+          "Port": 8090, 
+          "Protocol": "tcp"
+        }
+      ]
+    }, 
+    "web": {
+      "Image": "hbanyal/airweb@sha256:f46b764f6b1dcef48d29b8194d0913fb7dfc3f5732388286904b3604ca039df9", 
+      "Networks": [
+        "mynetwork1"
+      ], 
+      "Ports": [
+        {
+          "Port": 8001, 
+          "Protocol": "tcp"
+        }
+      ]
+    }
+  }, 
+  "Version": "0.1"
+}

@@ -1,0 +1,13 @@
+sudo docker service create --network mynetwork --name config --publish 8888:8888 --constraint 'node.hostname==hitendra-VirtualBox' hbanyal/config:v1
+
+sudo docker service create --network mynetwork --name rabbitmq --publish 15672:15672 --publish 5672:5672 --constraint 'node.hostname==hitendra-VirtualBox' rabbitmq:3-management
+
+sudo docker service create --network mynetwork --name eureka --publish 8761:8761 --env SPRING_PROFILES_ACTIVE=server1 --constraint 'node.hostname==hitendra-VirtualBox' hbanyal/eureka:v1
+
+sudo docker service create --network mynetwork --name web --publish 8001:8001 --env SPRING_PROFILES_ACTIVE=development --constraint 'node.hostname==hitendra-VirtualBox' hbanyal/airweb:v1
+
+sudo docker service create --replicas 3 --network mynetwork --name search --env SPRING_PROFILES_ACTIVE=development --publish 8090:8090 hbanyal/search:v1
+
+sudo docker service create --replicas 3 --network mynetwork --name book --env SPRING_PROFILES_ACTIVE=development --publish 8091:8091 hbanyal/book:v1
+
+

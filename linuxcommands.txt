@@ -1,0 +1,45 @@
+1) create group:
+important options are -f and -g.
+-f causes coomand to exit if group already exist. -g is used to specify group id. -f used with -g and specified id exist then another unique id us choosen.
+
+$ sudo groupadd -g 600 highlane
+
+2) create user:
+
+$ sudo useradd -ghighlane user1
+
+i was not able to login using user1 as i can not see user1 folder under /home. so i used below command.
+
+$ sudo useradd -m -ghighlane user4
+
+we can also use adduser to create user:
+
+$ sudo adduser user5
+
+add this user to group:
+
+$ sudo adduser user5 highlane 
+
+3) set password for user:
+
+$ sudo passwd user1
+
+
+4) check password related details for user:
+
+$ sudo chage --list user1
+
+5) set password expiry time:
+
+$ sudo chage -E 2017-01-03 user1
+
+6) lock pwd:
+
+$ sudo -l user1
+
+7) unlock pwd:
+
+$ sudo -u user1
+
+
+
